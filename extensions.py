@@ -30,6 +30,6 @@ class CurrencyConverter:
             return converted_amount
 
         except ValueError:
-            raise APIException("Недопустимая сумма. Пожалуйста, нужное количество переводимой валюты.")
+            raise APIException("Недопустимая сумма. Пожалуйста, введите нужное количество переводимой валюты.")
         except Exception as e:
             raise APIException(str(e))
